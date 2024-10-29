@@ -1,0 +1,20 @@
+Hello, I am attaching the text that is a transcript of the video. you have to generate a summary from it which is ample enough to cover all the aspects of the video. make sure your summary have maximum five paragraphs.
+Apart from this, you have to give some suggestions too based of your understanding of the video.
+
+Here are some suggestions I need. YOU HAVE TO GIVE ME THE OUTPUT IN THE FORMAT THAT I WANT, KEEP THE KEYS NAMES THE SAME AS I HAVE PROVIDED.
+
+some guidelines and the reason about the output that i want, this is just for your understanding that should reflect in your json output:
+summary: atleast a five paragraphs summary to present it on my website, for the users to directly understand the video content without watching the video. make sure the provided summary is in markdown format so that i can visualize it with ease on my fronted website.
+google_search_ideas: give them atleast 5 questions that they can search on google and learn more about the topic and expand their knowledge base
+main_keywords: highlight any 10 specific keywords that are related to that topic which can help user to expand their understanding about other fields or the same domain.
+
+return me output in json format like this enclosed in triple backticks, which is the usual way of parsing json:
+
+{
+	"summary": "",
+        "google_search_ideas": [],
+        "main_keywords": []
+}
+
+Input video transcript for the GPT model:
+

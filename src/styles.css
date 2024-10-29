@@ -1,0 +1,218 @@
+/* Base styles for body text */
+body {
+    font-size: 16px; /* Base font size for the entire app */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Minimum height to cover the viewport */
+    background: linear-gradient(135deg, rgba(42, 126, 131, 0.8), rgba(31, 37, 41, 0.6), rgba(30, 30, 30, 0.8)); /* Darker soft colors */
+    background-size: 400% 400%; /* Increased size for smoother animation */
+    color: #333; /* Dark text color for contrast */
+}
+
+
+.common-container {
+    padding: 20px; /* Common padding */
+    background-color: #f9f9f9; /* Common background */
+    border-radius: 8px; /* Common border radius */
+    box-shadow: 0 2px 10px rgb(33, 32, 32); /* Common shadow */
+    max-width: 600px; /* Common max width */
+    margin: 20px auto; /* Common margin */
+}
+
+/* 1 */
+/* Video Input Container */
+@keyframes dropDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Start above the container’s final position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+.video-input-container {
+  /* Drop-down Animation */
+  opacity: 0; /* Start invisible */
+  animation: dropDown 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards; /* Smooth drop-down */
+}
+
+.video-input-container h1 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark color for text */
+    font-size: 24px; /* Larger font for heading */
+}
+
+.video-input-container input {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Padding for input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+    margin-bottom: 10px; /* Space below the input */
+    font-size: 16px; /* Same font size as body text */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+
+}
+
+.video-input-container button {
+    padding: 10px; /* Padding for button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Same font size as body text */
+}
+
+.video-input-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* 2 */
+/* Summary Box */
+.summary-box {
+    /* for future styles */
+    padding: 20px; /* Example style */
+
+}
+
+.summary-box h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px; /* Larger font for heading */
+}
+
+.summary-box p {
+    color: #555; /* Slightly darker color for better readability */
+    line-height: 1.6; /* Improve line spacing for readability */
+    font-size: 16px; /* Same font size as body text */
+}
+
+/* 3 */
+/* Search Ideas */
+.search-ideas {
+    padding: 20px;
+
+}
+
+.search-ideas h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px; /* Larger font for heading */
+}
+
+.search-ideas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search-ideas li {
+    margin: 10px 0; /* Add spacing between items */
+    font-size: 16px; /* Same font size as body text */
+}
+
+.search-ideas button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make buttons full-width */
+}
+
+.search-ideas button:hover {
+    background-color: #0056b3; /* Darken button on hover */
+}
+
+/* 4 */
+/* Topic Keywords Container */
+.topic-keywords-container {
+    padding: 20px;
+}
+
+.topic-keywords-heading {
+    font-size: 24px; /* Match size of other headings */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark color for text */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.topic-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center; /* Center the keywords */
+}
+
+.topic-keywords span {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border-radius: 16px;
+    color: #333;
+    font-size: 16px; /* Same font size as body text */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft grey shadow */
+
+}
+
+/* 5 */
+/* Captions Box */
+.captions-box {
+    padding: 20px;
+}
+
+.captions-box h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px; /* Larger font for heading */
+}
+
+.captions-box p {
+    color: #555; /* Slightly darker color for better readability */
+    line-height: 1.6; /* Improve line spacing for readability */
+    font-size: 16px; /* Same font size as body text */
+}
+
+
+/* styles.css */
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust the height as needed */
+}
+
+.loading {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px; /* Increased size */
+    height: 50px; /* Increased size */
+    animation: spin 0.5s linear infinite; /* Shortened animation duration */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+/* Optional: A gradient effect for modern look */
+.loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient colors */
+    animation: spin 0.5s linear infinite; /* Match animation with the spinner */
+    z-index: -1; /* Keep the gradient behind the spinner */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+  
+

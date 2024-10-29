@@ -1,0 +1,74 @@
+/* IdeaDetails.css */
+
+.idea-details-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(33, 32, 32);
+    max-width: 600px;
+    margin: 20px auto;
+    word-wrap: break-word; /* Ensures long words or URLs wrap to the next line */
+
+}
+
+/* Heading Style */
+.idea-details-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Summary Text */
+.google-summary {
+    /* font-weight:bold; */
+    color: #555;
+    line-height: 1.6;
+}
+
+
+.heading3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.heading4 {
+    /* text-align: center; */
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+}
+
+/* List Styles */
+.link-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-list-reference {
+    text-align: center;
+
+}
+
+.link-list li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.link-list a {
+    color: #007acc;
+    text-decoration: none;
+    overflow-wrap: break-word; /* Forces URLs to wrap if they exceed container width */
+    word-break: break-all; /* Breaks long URLs */
+    
+}
+
+.link-list a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 16px;
+}
