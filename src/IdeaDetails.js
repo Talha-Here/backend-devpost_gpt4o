@@ -17,7 +17,7 @@ const IdeaDetails = () => {
     const fetchData = async () => {
       try {
         console.log('Fetching data for idea:', idea);
-        const response = await axios.post('http://127.0.0.1:8000/search', {
+        const response = await axios.post('http://127.0.0.1:5000/flask_app_google_search/search', {
           query: idea,
         });
         setData(response.data);

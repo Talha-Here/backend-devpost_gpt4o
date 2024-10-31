@@ -9,15 +9,19 @@ from dotenv import load_dotenv
 # from pymongo import MongoClient
 from datetime import datetime, timezone
 from connect_db import get_qs_data, get_video_data, insert_video_data  # Import functions
+from flask import Blueprint
+
+from flask import Blueprint, request, jsonify
 
 
 # Load environment variables
 load_dotenv(override=True)
 # load_dotenv()
 
-app = Flask(__name__)
+flask_app_google_search = Blueprint('flask_app_google_search', __name__)
+# app = Flask(__name__)
 # FRONTEND RUNS ON PORT 3000
-CORS(app, origins=["http://localhost:3000"])
+CORS(flask_app_google_search, origins=["http://localhost:3000"])
 
 # Get API keys from environment variables
 API_KEY = os.getenv('API_KEY')
@@ -77,7 +81,7 @@ def extract_visible_text(html):
     return visible_text
 
 
-@app.route('/search', methods=['POST'])
+@flask_app_google_search.route('/search', methods=['POST'])
 def search():
     data = request.json
     search_query = data.get('query', '')
@@ -173,5 +177,5 @@ def search():
     return jsonify(response_data)
 
 
-if __name__ == "__main__":
-    app.run(debug=True, port=8000)  # Run the app on port 8000
+# if __name__ == "__main__":
+#     flask_app_google_search.run(debug=True, port=5000)  # Run the app on port 8000

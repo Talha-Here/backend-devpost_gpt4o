@@ -45,7 +45,7 @@ const CaptionExtractor = () => {
 
     try {
       const response = await axios.post(
-        'http://127.0.0.1:5000/extract-captions',
+        'http://127.0.0.1:5000/flask_app/extract-captions',
         { video_url: videoUrl },
       );
 

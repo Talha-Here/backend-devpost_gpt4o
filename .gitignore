@@ -28,3 +28,6 @@ yarn-error.log*
 
 #temporary files
 temp.txt
+
+/myenv
+/__pycache__

@@ -13,12 +13,14 @@ from datetime import datetime, timezone
 
 from connect_db import get_video_data, insert_video_data  # Import functions
 
+from flask import Blueprint, request, jsonify
 
-app = Flask(__name__)
+flask_app = Blueprint('flask_app', __name__)
+# app = Flask(__name__)
 load_dotenv(override=True)
 
 # FRONTEND RUNS ON PORT 3000
-CORS(app, origins=["http://localhost:3000"])
+CORS(flask_app, origins=["http://localhost:3000"])
 
 # Initialize OpenAI client
 # client = OpenAI(api_key=os.getenv("openAI_key"))
@@ -57,7 +59,7 @@ def get_captions(video_id):
         return f"Error retrieving captions for video {video_id}: {str(e)}"
 
 
-@ app.route('/extract-captions', methods=['POST'])
+@flask_app.route('/extract-captions', methods=['POST'])
 def extract_captions():
     data = request.json
     video_url = data.get('video_url')
@@ -171,6 +173,6 @@ def extract_captions():
         return jsonify({"error": str(e)}), 500
 
 
-if __name__ == '__main__':
-    # RUNS BY DEFAULT ON PORT 5000
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     # RUNS BY DEFAULT ON PORT 5000
+#     flask_app.run(debug=True)
