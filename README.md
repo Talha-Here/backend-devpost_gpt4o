@@ -1,11 +1,14 @@
 
-![Screenshot from 2024-11-01 03-58-33](https://github.com/user-attachments/assets/16169fb1-0cc0-4a34-8c5b-d1867af1bc41)
-![Screenshot from 2024-11-01 04-20-27](https://github.com/user-attachments/assets/6474189e-9f39-4677-8b28-f7f6893fff59)
-![Screenshot from 2024-11-01 04-20-35](https://github.com/user-attachments/assets/4932c6b4-0545-4608-8608-5f565b2ff709)
-![Screenshot from 2024-11-01 04-20-49](https://github.com/user-attachments/assets/467925e0-98a6-482b-b7cd-01512214c675)
-![Screenshot from 2024-11-01 04-20-59](https://github.com/user-attachments/assets/1c2cfbb8-4063-4c39-8b24-241d4f61dc13)
-![Screenshot from 2024-11-01 04-21-06](https://github.com/user-attachments/assets/cd20a0db-dfa3-489e-86e7-fd2030f3f11b)
-![Screenshot from 2024-11-01 04-21-33](https://github.com/user-attachments/assets/80bb4e1c-233d-4436-a377-9228ba8c1ecc)
+![Screenshot from 2024-11-01 03-58-33](https://github.com/user-attachments/assets/2df3ed6c-70ee-4a1f-ad08-5eaf1000f8c2)
+![Screenshot from 2024-11-01 04-20-27](https://github.com/user-attachments/assets/fb881e4c-797b-4ab7-94bf-31c636140252)
+![Screenshot from 2024-11-01 04-20-35](https://github.com/user-attachments/assets/facb39e7-21bc-4ec4-a69f-0a0318541c78)
+![Screenshot from 2024-11-01 04-20-49](https://github.com/user-attachments/assets/bc2445dd-6c63-4325-897a-a0fa5b612c8c)
+![Screenshot from 2024-11-01 04-20-59](https://github.com/user-attachments/assets/d49c358b-8413-406b-8083-ec14ded5bb74)
+![Screenshot from 2024-11-01 04-21-06](https://github.com/user-attachments/assets/4865b04d-50d2-4a5f-8c03-a1af6dcc3e8a)
+![Screenshot from 2024-11-01 04-21-33](https://github.com/user-attachments/assets/711b2601-f2f8-44fd-93c5-c21485c986a7)
+![Screenshot from 2024-11-01 04-22-15](https://github.com/user-attachments/assets/e70f47d6-02f8-40db-a1e6-e620f05918a4)
+![Screenshot from 2024-11-01 04-22-24](https://github.com/user-attachments/assets/12710783-94cf-43d0-8df1-0afd909f9888)
+
 
 # Getting Started with Create React App
 
