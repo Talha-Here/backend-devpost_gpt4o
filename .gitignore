@@ -31,3 +31,4 @@ temp.txt
 
 /myenv
 /__pycache__
+.vercel

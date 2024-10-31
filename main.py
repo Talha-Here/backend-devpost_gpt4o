@@ -12,4 +12,5 @@ app.register_blueprint(flask_app, url_prefix='/flask_app')
 app.register_blueprint(flask_app_google_search, url_prefix='/flask_app_google_search')
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    # app.run(host="0.0.0.0", port=5000)
+    app.run()
